@@ -1,17 +1,20 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 public class RomanNumeralsConverterTest {
 
-    @Test
-    void convertRomanNumberToArabicNumberTest() {
+    @ParameterizedTest
+    @ValueSource(strings = {"I"})
+    void convertRomanNumberToArabicNumberTest(String romanNumbers) {
         // Arrange
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
-        int expected = 2;
-        String romanNumber = "II";
+        int expected = 1;
 
         // Act
-        int actual = romanNumeralsConverter.convertRomanToArabic(romanNumber);
+        System.out.println(romanNumbers);
+        int actual = romanNumeralsConverter.convertRomanToArabic(romanNumbers);
 
         // Assert
         Assertions.assertEquals(expected, actual);
