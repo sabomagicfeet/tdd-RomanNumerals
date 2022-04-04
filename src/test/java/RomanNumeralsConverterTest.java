@@ -2,8 +2,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class RomanNumeralsConverterTest {
+
+    // convert I to 1
     @Test
-    void test1() {
+    void convertRomanNumberToArabicNumberTest() {
         // Arrange
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         int expected = 1;
