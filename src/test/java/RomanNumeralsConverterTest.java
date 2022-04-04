@@ -8,8 +8,8 @@ public class RomanNumeralsConverterTest {
     void convertRomanNumberToArabicNumberTest() {
         // Arrange
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
-        int expected = 1;
-        String romanNumber = "I";
+        int expected = 2;
+        String romanNumber = "II";
 
         // Act
         int actual = romanNumeralsConverter.convertRomantoArabic(romanNumber);
