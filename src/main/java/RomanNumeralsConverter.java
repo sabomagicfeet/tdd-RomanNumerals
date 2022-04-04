@@ -1,13 +1,12 @@
+import java.util.HashMap;
+
 public class RomanNumeralsConverter {
-    public int convertRomantoArabic(String romanNumber) {
-        // if roman Number is I, return 1
-        if(romanNumber == "I") {
-            return 1;
-        } else if(romanNumber == "II") {
-            return 2;
-        } else if(romanNumber == "III") {
-            return 3;
-        }
-        return 0;
+    public int convertRomanToArabic(String romanNumber) {
+        HashMap<String, Integer> romanNumeralsMap = new HashMap<>();
+        romanNumeralsMap.put("I", 1);
+        romanNumeralsMap.put("II", 2);
+        romanNumeralsMap.put("III", 3);
+
+        return romanNumeralsMap.get(romanNumber);
     }
 }
