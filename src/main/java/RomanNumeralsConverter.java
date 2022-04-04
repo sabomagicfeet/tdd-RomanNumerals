@@ -1,5 +1,9 @@
 public class RomanNumeralsConverter {
     public int convertRomantoArabic(String romanNumber) {
-        return 1;
+        // if roman Number is I, return 1
+        if(romanNumber == "I") {
+            return 1;
+        }
+        return 0;
     }
 }
